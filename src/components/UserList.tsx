@@ -4,6 +4,7 @@ import { useActions } from "../hooks/useActions";
 
 const UserList: FC = () => {
   const { error, loading, users } = useTypedSelector((state) => state.user);
+  // кастомный хук всесто стандартного useDispatch
   const { fetchUsers } = useActions();
 
   useEffect(() => {
